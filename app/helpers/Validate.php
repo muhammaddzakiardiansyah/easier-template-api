@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Helpers;
+
 class Validate {
   /**
    * @var $field_name for field name like "name"

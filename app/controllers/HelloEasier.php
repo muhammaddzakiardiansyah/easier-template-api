@@ -1,12 +1,18 @@
 <?php
 
 class HelloEasier {
+
   public function index()
   {
-    http_response_code(200);
-    echo json_encode([
+    $data = [
       "statusCode" => 200,
       "message" => "Hello Easier👋",
-    ]);
+      "data" => [
+        "message" => "Edit this endpoint in controller HelloEasier"
+      ] 
+    ];
+
+    return Response::json($data, 200);
   }
+  
 }
